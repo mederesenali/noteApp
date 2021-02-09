@@ -14,17 +14,22 @@
         app:layout_constraintEnd_toEndOf="@id/guideline_end"
         app:layout_constraintStart_toStartOf="@id/guideline_start"
         app:layout_constraintTop_toTopOf="@id/guideline_top"
-        tools:listitem="@layout/note_item"
-        tools:itemCount="5"/>
+        tools:itemCount="5"
+        tools:listitem="@layout/note_item" />
 
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
         android:id="@+id/floatingActionButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="Добавить"
+        android:textColor="@color/white"
+        app:backgroundTint="@android:color/holo_blue_dark"
+        app:icon="@android:drawable/ic_input_add"
+        app:iconPadding="4dp"
+        app:iconTint="@color/white"
         app:layout_constraintBottom_toBottomOf="@id/guideline_bottom"
         app:layout_constraintEnd_toEndOf="@id/guideline_end"
-        app:srcCompat="@android:drawable/ic_input_add"
         app:useCompatPadding="true"
         tools:ignore="ContentDescription,OnClick" />
 
